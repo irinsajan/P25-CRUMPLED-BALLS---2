@@ -19,12 +19,8 @@ class Paper {
       translate(pos.x, pos.y);
       rotate(angle);
   
-      ellipseMode(RADIUS);
-
-      strokeWeight(3);
-      // stroke("purple");
-      // fill("purple");
-      ellipse(0, 0, this.radius, this.radius);
+     imageMode(CENTER);
+      image(this.image,0,0,this.radius,this.radius);
       pop();
     }
   };
