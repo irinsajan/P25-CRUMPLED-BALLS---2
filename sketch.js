@@ -6,10 +6,10 @@ const Body = Matter.Body;
 var ball;
 var ground;
 var lBox, rBox, bBox;
-var paperImage;
+var dustbinImage;
 
 function preload() {
-	paperImage = loadImage("paper.png");
+	dustbinImage = loadImage("dustbingreen.png");
 }
 
 function setup() {
@@ -35,7 +35,7 @@ function setup() {
 
 function draw() {
   background('lightgray');
-
+  image(dustbinImage,500,600,100,100);
   paperImage.display();
   ground.display();
   lBox.display();
